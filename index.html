@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remote Banana — your Mac on your iPad, at native speed</title>
+<meta name="description" content="Remote Banana connects your iPad to your Mac's built-in High Performance Screen Sharing — hardware-accelerated video, audio, near-zero latency, at the iPad's full Retina resolution.">
+<meta property="og:title" content="Remote Banana">
+<meta property="og:description" content="The iPad client for your Mac's built-in High Performance Screen Sharing. Smooth motion, audio included, native Retina sharpness.">
+<meta property="og:image" content="logo.svg">
+<meta name="twitter:card" content="summary">
+<style>
+:root {
+  --bg: #1b1b1d;
+  --panel: #232326;
+  --text: #f2f2f4;
+  --muted: #9d9da3;
+  --accent: #f7ae00;
+  --accent-ink: #1b1b1d;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+header { padding: 96px 0 64px; text-align: center; }
+header img { width: 120px; height: 120px; }
+h1 { font-size: 44px; letter-spacing: -0.5px; margin: 24px 0 12px; }
+.tagline { font-size: 21px; color: var(--muted); max-width: 620px; margin: 0 auto; }
+.tagline strong { color: var(--text); }
+.cta {
+  display: inline-block; margin-top: 36px; padding: 15px 34px;
+  background: var(--accent); color: var(--accent-ink);
+  font-size: 17px; font-weight: 600; text-decoration: none;
+  border-radius: 12px;
+}
+.cta:hover { filter: brightness(1.05); }
+.note { margin-top: 14px; font-size: 14px; color: var(--muted); }
+section { padding: 40px 0; }
+h2 { font-size: 28px; margin-bottom: 20px; letter-spacing: -0.3px; }
+.pitch p { color: var(--muted); font-size: 18px; max-width: 640px; }
+.pitch strong { color: var(--text); }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px; margin-top: 8px;
+}
+.card {
+  background: var(--panel); border-radius: 16px; padding: 22px;
+}
+.card h3 { font-size: 17px; margin-bottom: 6px; }
+.card p { font-size: 15px; color: var(--muted); }
+.card .num { color: var(--accent); font-weight: 700; }
+.shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.shot {
+  aspect-ratio: 4/3; border-radius: 20px; background: var(--panel);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: 15px; text-align: center; padding: 20px;
+  border: 1px solid #2e2e32;
+}
+.req {
+  border-left: 3px solid var(--accent);
+  background: var(--panel); border-radius: 0 14px 14px 0;
+  padding: 20px 24px; color: var(--muted); font-size: 15px;
+}
+.req code { color: var(--text); }
+footer { padding: 48px 0 64px; color: var(--muted); font-size: 14px; text-align: center; }
+@media (max-width: 600px) { h1 { font-size: 34px; } header { padding-top: 64px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo.svg" alt="Remote Banana logo">
+    <h1>Remote Banana</h1>
+    <p class="tagline">Your Mac on your iPad, at native speed. The iPad client for macOS built-in <strong>High Performance Screen Sharing</strong>.</p>
+    <a class="cta" href="#">Download on the App Store</a>
+    <p class="note">Coming soon to the App Store.</p>
+  </header>
+
+  <section class="pitch">
+    <h2>Your Mac's hidden high-performance mode, on the iPad</h2>
+    <p>
+      macOS ships a <strong>High Performance Screen Sharing</strong> mode: hardware-accelerated,
+      low-latency remote desktop with audio. Remote Banana speaks that protocol natively —
+      <strong>video and audio stream as hardware-encoded media over encrypted UDP</strong>, not as a
+      slow framebuffer redraw like VNC. Motion is smooth, audio comes along, and it stays sharp at
+      your iPad's full Retina resolution. One-time purchase, no account, no cloud — a direct,
+      encrypted connection on your own network.
+    </p>
+  </section>
+
+  <section>
+    <h2>What you get</h2>
+    <div class="grid">
+      <div class="card"><h3><span class="num">01</span> Native sharpness</h3><p>Your Mac renders a virtual display matching the iPad — pixel for pixel, even when you rotate.</p></div>
+      <div class="card"><h3><span class="num">02</span> Audio, too</h3><p>Mac audio streams alongside the video, in sync, over the same encrypted connection.</p></div>
+      <div class="card"><h3><span class="num">03</span> One-tap connect</h3><p>Configurations are auto-discovered on your network and unlock with Face ID. Tap, and you're on the desktop.</p></div>
+      <div class="card"><h3><span class="num">04</span> Built for touch</h3><p>Three modes: direct drag, direct scroll, and a full touchpad with fling. Corner menu for everything else.</p></div>
+      <div class="card"><h3><span class="num">05</span> Apple Pencil</h3><p>The Pencil works as a precise stylus on the remote Mac — with pressure-aware taps.</p></div>
+      <div class="card"><h3><span class="num">06</span> A real keyboard</h3><p>On-screen or Bluetooth — modifiers, function keys, arrows, Esc and Tab all behave like on a Mac.</p></div>
+      <div class="card"><h3><span class="num">07</span> Picture-in-Picture</h3><p>Minimize Remote Banana and the session keeps running in a PiP window while you use other apps.</p></div>
+      <div class="card"><h3><span class="num">08</span> Live Activity</h3><p>Your connection lives in the Dynamic Island and Notification Center with status and duration at a glance.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>See it in motion</h2>
+    <div class="shots">
+      <div class="shot">Screen recording: full-screen session</div>
+      <div class="shot">Screen recording: corner menu &amp; touchpad</div>
+      <div class="shot">Screen recording: PiP &amp; Live Activity</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Requirements</h2>
+    <div class="req">
+      A Mac with Apple Silicon running <strong>macOS 14 or later</strong>, with Screen Sharing enabled in
+      System Settings &rarr; General &rarr; Sharing. Both devices on the same network
+      (<code>TCP 5900</code> and <code>UDP 5900&ndash;5902</code> reachable).
+      <br><br>
+      Away from home? Run <strong>Tailscale</strong> (or any VPN) on both devices and enter the Mac's
+      Tailscale address (<code>100.x.y.z</code> or <code>*.ts.net</code>) as the host — no extra setup needed in the app.
+    </div>
+  </section>
+
+  <footer>
+    &copy; Mads Ynddal. All rights reserved.<br>
+    Remote Banana is an independent app and is not affiliated with Apple Inc.
+  </footer>
+</div>
+</body>
+</html>
