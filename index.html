@@ -41,7 +41,9 @@ h1 { font-size: 44px; letter-spacing: -0.5px; margin: 24px 0 12px; }
 .note { margin-top: 14px; font-size: 14px; color: var(--muted); }
 section { padding: 40px 0; }
 h2 { font-size: 28px; margin-bottom: 20px; letter-spacing: -0.3px; }
-.pitch p { color: var(--muted); font-size: 18px; max-width: 640px; }
+/* Center the pitch block with equal side margins; text inside stays left-aligned. */
+.pitch { max-width: 680px; margin: 0 auto; }
+.pitch p { color: var(--muted); font-size: 18px; }
 .pitch strong { color: var(--text); }
 .grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
